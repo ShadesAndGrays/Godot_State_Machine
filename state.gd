@@ -6,9 +6,9 @@ var state_name:StringName
 
 func _ready() -> void:
 	state_name = StringName(name)
-	State_machine = get_parent()
 	print("State initialized ",state_name)
 
+	
 ## function runs when the current state has been transitioned into
 func _enter_state() ->void:
 	pass
