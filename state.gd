@@ -1,3 +1,4 @@
+@icon("res://Godot_state_machine/state_icon.svg")
 class_name state extends Node
 
 var State_machine:state_machine = null
