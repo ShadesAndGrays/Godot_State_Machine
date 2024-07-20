@@ -1,15 +1,8 @@
-@icon("res://Godot_state_machine/state_icon.svg")
-class_name state extends Node
-
-var State_machine:state_machine = null
-
-var state_name:StringName
+extends State
 
 func _ready() -> void:
-	state_name = StringName(name)
-	print("State initialized ",state_name)
+	super._ready()
 
-	
 ## function runs when the current state has been transitioned into
 func _enter_state() ->void:
 	pass
