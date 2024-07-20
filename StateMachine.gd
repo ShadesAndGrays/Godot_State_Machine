@@ -14,7 +14,7 @@ func _init() -> void:
 func load_states(state_node):
     if state_node is State:
         AllStates.append(state_node)
-        state_node.transistion.connect(_switch_state)
+        state_node.transition.connect(_switch_state)
     for i in state_node.get_children():
         load_states(i)
 
@@ -49,7 +49,7 @@ func _physic_control(delta: float) -> void:
 ## It calls the exit and entry function of the previous and next state respectively
 func  _switch_state(next_state:StringName)->void:
     for states in AllStates:
-        if states.state_name == next_state:
+        if states.state_name.to_lower() == next_state.to_lower():
             current_state._exit_state()
             current_state = states
             current_state._enter_state()

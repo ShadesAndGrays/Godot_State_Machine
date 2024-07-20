@@ -3,7 +3,7 @@ class_name State extends Node
 
 var state_name:StringName
 
-signal transistion
+signal transition
 
 func _ready() -> void:
     state_name = StringName(name)

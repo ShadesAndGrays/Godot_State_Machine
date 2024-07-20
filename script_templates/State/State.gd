@@ -7,7 +7,7 @@ func _ready() -> void:
 func _enter_state() ->void:
 	pass
 ## funtion that runs in place of _process controled by the parent state machine
-func _process_contorl(delta)->void:
+func _process_control(delta)->void:
 
 	pass
 ## function that runs in place of _physics_process controlled by the parent state machine
