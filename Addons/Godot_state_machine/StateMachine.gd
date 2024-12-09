@@ -1,4 +1,4 @@
-@icon("res://Godot_state_machine/state_machine_icon.svg")
+@icon("res://Addons/Godot_state_machine/state_machine_icon.svg")
 class_name StateMachine extends State
 
 ## The state currently being managed by thr state machine

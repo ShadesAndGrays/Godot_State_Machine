@@ -2,16 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3ryxiepvxohh"
-path="res://.godot/imported/state_icon.svg-e5544bbb7fe22746379b7b013def0af7.ctex"
+uid="uid://dnx2lgxipkqi0"
+path="res://.godot/imported/state_machine_icon.svg-a47d71c444b42c268105f69cbce9cf78.ctex"
 metadata={
+"has_editor_variant": true,
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Godot_state_machine/state_icon.svg"
-dest_files=["res://.godot/imported/state_icon.svg-e5544bbb7fe22746379b7b013def0af7.ctex"]
+source_file="res://Addons/Godot_state_machine/state_machine_icon.svg"
+dest_files=["res://.godot/imported/state_machine_icon.svg-a47d71c444b42c268105f69cbce9cf78.ctex"]
 
 [params]
 
@@ -21,7 +22,7 @@ compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -33,5 +34,5 @@ process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
 svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
+editor/scale_with_editor_scale=true
+editor/convert_colors_with_editor_theme=true
