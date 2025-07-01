@@ -5,4 +5,5 @@ icon.*
 project.*
 !Addons 
 .editorconfig
+test/
 
