@@ -1,4 +1,4 @@
-@icon("res://Addons/Godot_State_Machine/state_machine_icon.svg")
+@icon("res://addons/GodotStateMachine/state_machine_icon.svg")
 class_name StateMachine extends State
 
 ## State to be used on first initialization of the state machine
