@@ -1,5 +1,5 @@
 @icon("res://addons/GodotStateMachine/state_icon.svg")
-class_name State extends Node
+extends Node
 
 var state_name:StringName
 

@@ -1,5 +1,7 @@
-@icon("res://addons/GodotStateMachine/state_machine_icon.svg")
-class_name StateMachine extends State
+# @icon("res://addons/GodotStateMachine/state_machine_icon.svg")
+extends "res://addons/GodotStateMachine/state.gd"
+
+const State = preload("res://addons/GodotStateMachine/state.gd")
 
 ## State to be used on first initialization of the state machine
 @export var default_state:State
