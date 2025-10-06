@@ -1,4 +1,5 @@
-extends State
+@warning_ignore("missing_tool")
+extends GodotStateMachine.State
 
 func _ready() -> void:
 	pass

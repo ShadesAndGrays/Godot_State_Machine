@@ -1,8 +1,10 @@
 @tool
 extends EditorPlugin
+class_name GodotStateMachine
 
 const State = preload("res://addons/GodotStateMachine/state.gd")
 const StateMachine = preload("res://addons/GodotStateMachine/state_machine.gd")
+
 const StateIcon  = preload("res://addons/GodotStateMachine/state_icon.svg")
 const StateMachineIcon  = preload("res://addons/GodotStateMachine/state_machine_icon.svg")
 
@@ -24,9 +26,9 @@ func _enable_plugin() -> void:
 		DirAccess.make_dir_absolute(destination_script_template_path)
 	# print(DirAccess.get_directories_at(source_script_template_path))
 	var from = DirAccess.open(source_script_template_path)
-	print("copying")
+	# print("copying")
 	for path in cp_files: 
-		print(path)
+		# print(path)
 		copy_absolute_recursively(
 			"{0}/{1}".format([source_script_template_path,path]),
 			"{0}/{1}".format([destination_script_template_path,path])

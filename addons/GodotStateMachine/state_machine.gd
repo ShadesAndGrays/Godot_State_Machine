@@ -1,14 +1,13 @@
 # @icon("res://addons/GodotStateMachine/state_machine_icon.svg")
-extends "res://addons/GodotStateMachine/state.gd"
-
-const State = preload("res://addons/GodotStateMachine/state.gd")
+@warning_ignore("missing_tool")
+extends GodotStateMachine.State
 
 ## State to be used on first initialization of the state machine
-@export var default_state:State
+@export var default_state:GodotStateMachine.State
 @export var debug:bool = false
 
 ## The state currently being controlled by the state machine
-var current_state:State:
+var current_state:GodotStateMachine.State:
 	set(value): 
 		current_state_transition.emit(str(current_state),str(value))
 		current_state = value
@@ -22,7 +21,7 @@ func _init() -> void:
 	pass
 
 func _load_states(state_node):
-	if state_node is State:
+	if state_node is GodotStateMachine.State:
 		state_node.state_name = StringName(state_node.name)
 		all_states.append(state_node)
 		state_node.transition.connect(_switch_state)

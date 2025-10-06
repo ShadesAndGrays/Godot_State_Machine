@@ -1,4 +1,5 @@
-extends StateMachine
+@warning_ignore("missing_tool")
+extends GodotStateMachine.StateMachine
 
 func _ready() -> void:
     super._ready()
